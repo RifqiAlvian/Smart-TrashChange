@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	list-style: none;
+}
+:root {
+	--bg-color: #ffff;
+	--text-color: rgb(0, 0, 0);
+	--main-color: #11db11;
+	--secondary-color: #2f5150;
+}
+body {
+	height: 100%;
+}
+.topnav {
+	background-color: var(--bg-color);
+	overflow: hidden;
+}
+.far.fa-user-circle {
+	font-size: 29px;
+	color: grey;
+	padding-top: 10px;
+}
+.input-10 {
+	width: 40px;
+	color: var(--main-color);
+	font-weight: 600;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: grey;
+	font-size: 20px;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-bottom: 10px solid transparent;
+}
+.topnav a:hover {
+	color: black;
+	border-bottom: 3px solid var(--main-color);
+}
+.topnav .active {
+	color: black;
+	border-bottom: 3px solid var(--main-color);
+    font-weight: bold;
+}
+form.example input[type="text"] {
+	padding: 10px;
+	font-size: 15px;
+	border: 1px solid grey;
+	float: left;
+	width: 90%;
+	height: 36px;
+	background: var(--bg-color);
+}
+form.example input[type="text"]:focus {
+	outline: none;
+}
+form.example button {
+	float: left;
+	width: 10%;
+	height: 36px;
+	padding: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: var(--secondary-color);
+	color: var(--bg-color);
+	font-size: 14px;
+	border: 1px solid grey;
+	border-left: none;
+	cursor: pointer;
+}
+.navbar-toggler:focus {
+	box-shadow: none;
+	outline: none;
+	border: none;
+}
+::placeholder {
+	font-size: 15px;
+}
+form.example button:hover {
+	background: var(--main-color);
+}
+form.example::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.container .table-responsive {
+	margin: 20px auto;
+	overflow-x: auto;
+}
+.table thead tr th {
+	font-size: 15px;
+	color: var(--main-color);
+	padding: 10px 10px;
+}
+.table tbody tr td {
+	font-size: 15px;
+	padding: 10px 10px;
+}
+#navbar {
+	width: 20%;
+	background-color: var(--secondary-color)!important;
+	height: 70px;
+	border: none;
+}
+.bg-blight {
+	color: var(--secondary-color);
+    font-weight: bold;
+}
+#navbar a {
+	color: var(--bg-color);
+}
+.fas.fa-bars {
+	color: var(--bg-color);
+}
+#navbar2 {
+	width: 80%;
+}
+#navbar-items {
+	width: 20%;
+	height: 950px;
+	background-color: var(--main-color);
+    opacity: 0.5;
+}
+ul li a{
+	color: var(--bg-color);
+	text-decoration: none;
+}
+ul li:hover a{
+	color: var(--main-color);
+	font-weight: 500;
+}
+ul#navbar-items li {
+	color: var(--bg-color);
+	padding: 25px 35px;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+}
+ul li .fas {
+	font-size: 16px;
+}
+ul#navbar-items li:hover 
+{
+    background-color: var(--bg-color);
+	color: var(--main-color);
+}
+ul li:hover .fas {
+	color: var(--main-color);
+}
+#topnavbar {
+	width: 80%;
+}
+.fs13 {
+	font-size: 13px;
+}
+.fs14 {
+	font-size: 18px;
+	color: var(--bg-color);
+}
+.fas.fa-times {
+	color: red;
+}
+.fas.fa-check {
+	color: var(--main-color);
+}
+.example {
+	width: 50%;
+}
+/* end main */
+
+/* footer */
+#footer-main{
+	min-height: 100%;
+	position: relative;
+}
+footer {
+	position: absolute;
+	margin-bottom: 100px;
+	bottom: 0;
+	width: 100%;
+	padding-bottom: 30px;
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+}
+
+.social-contact span{
+    font-size: 20px;
+    float: right;
+    padding-left: 15px;
+}
+
+/* end footer */
+
+@media (max-width: 780px) {
+	#navbar {
+		width: 20%;
+	}
+	#topnavbar {
+		width: 80%;
+	}
+	.text-decoration-none.fs14 {
+		font-size: 10px;
+	}
+	.text-decoration-none .fs13 {
+		font-size: 9px;
+	}
+}
+@media (max-width: 430px) {
+	#navbar-items,
+	#topnavbar {
+		width: 100%;
+		height: 100%;
+	}
+	#navbar-items {
+		padding: 20px;
+		margin-bottom: 30px;
+	}
+	.topnav a {
+		font-size: 12px;
+		padding: 12px;
+	}
+	#navbar {
+		width: 100%;
+		background-color: blue;
+	}
+	.example {
+		width: 100%;
+	}
+	.text-decoration-none.fs14 {
+		font-size: 14px;
+	}
+	.text-decoration-none .fs13 {
+		font-size: 13px;
+	}
+}
+@media (max-width: 376px) {
+	#navbar-items {
+		padding: 20px;
+		margin-bottom: 30px;
+	}
+	.topnav a {
+		font-size: 12px;
+		padding: 7px;
+	}
+}
+@media (max-width: 320px) {
+	.topnav a {
+		font-size: 10px;
+		padding: 4px;
+	}
+}
